@@ -9,7 +9,15 @@ Gem::Specification.new do |s|
   s.files       = `git ls-files`.split("\n").reject do |f|
     f.match(%r{^(spec|data)/})
   end
-  s.homepage    = 'http://rubygems.org/gems/j2119'
+  s.homepage    = 'https://github.com/awslabs/j2119'
   s.license     = 'Apache 2.0'
+
+  s.required_ruby_version = '>= 1.9.2'
+
   s.add_runtime_dependency "json"
+
+  s.metadata = {
+    'source_code_uri' => 'https://github.com/awslabs/j2119',
+    "bug_tracker_uri"   => 'https://github.com/awslabs/j2119/issues'
+  }
 end
